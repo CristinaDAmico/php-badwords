@@ -13,7 +13,7 @@
     // CODICE PHP
 
     // 1. Creare una variabile con assegnato un testo per popolare un paragrafo.
-    $text = " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita modi provident ea molestiae nesciunt sequi ullam perferendis, eum corrupti ut quasi consequuntur tempora maiores enim porro iure est nobis eos! ";
+    $text = " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita modi provident ea molestiae nesciunt sequi ullam perferendis, eum corrupti ut quasi consequuntur tempora maiores enim porro iure est nobis eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed nulla impedit dolorem hic quae, libero iste voluptatibus, vitae placeat saepe ab natus rerum. Officiis vero saepe, laudantium ullam illum numquam? ";
 
     ?>
 
@@ -23,9 +23,11 @@
 
     <main>
         <!-- 2. Visualizzare a schermo il paragrafo -->
-        <p> <?php echo $text; ?> </p>
-    </main>
+        <p> <?php echo $text; ?> <?php echo $badword; ?> </p>
 
+        <!-- 3. Visualizzare a schermo la lunghezza di testo del paragrafo. -->
+        <p>Lunghezza di testo del paragrafo: <?php echo strlen($text); ?> </p>
+    </main>
 
 
 
